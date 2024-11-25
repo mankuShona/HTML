@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Video</title>
+</head>
+
+<body>
+    <h2>&lt;audio&gt; element</h2>
+    <h4>Basic Syntax:</h4>
+    <pre>
+        <code>
+            &lt;audio controls autoplay loop&gt;
+            &lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+                Your browser does not support the audio element.
+            &lt;/audio&gt;
+        </code>
+    </pre>
+
+    <ol>
+        <li><strong><code>controls</code> attribute:</strong> Adds audio playback controls (play, pause, volume, etc.).</li>
+        <li><strong><code>&lt;source&gt;</code> tag:</strong> Specifies the audio file and its format.</li>
+        <li><strong><code>autoplay</code>:</strong> Automatically starts playing the media.</li>
+        <li><strong><code>loop</code>:</strong> Repeats the media playback.</li>
+    </ol>
+
+
+    <h4>Example:</h4>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>&lt;video&gt; element</h2>
+    <pre>
+        <code>
+            &lt;video width=&quot;320&quot; height=&quot;240&quot; controls poster=&quot;poster.jpeg&quot;&gt;
+            &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+                Your browser does not support the video tag.
+            &lt;/video&gt;
+        </code>
+    </pre>
+
+    <h4>Example:</h4>
+    <video width="320" height="240" controls poster="poster.jpeg">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+
+</html>
