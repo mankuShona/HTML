@@ -6,20 +6,23 @@
     <title>Subject Marks</title>
 </head>
 <body>
-    <fieldset>
+    <form>
+        <fieldset>
         <legend>Enter Your Marks</legend>
-        <form>
+        
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" > <br><br>
+            <input type="text" id="name" name="name" required> <br><br>
 
-            <label for="subject">Select Subject:</label>
+            <label for="subject">Select Subject: </label>
+
+            <!-- dropdown element -->
 
             <select id="subject" name="subject">
                 <option value="">Select Subject</option>
                 <option value="math">Mathematics</option>
                 <option value="science">Science</option>
                 <option value="english">English</option>
-                <option value="bangla">Bangla</option>
+                <option value="coding">Coding</option>
             </select> 
 
             <label for="marks">Enter Marks:</label>

@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Image</title>
 </head>
+
 <body>
-    <h2>&lt;img&gt; element</h2>
-    <!-- Syntax  -->
-     <h4>Syntax:</h4>
-    <p><strong><code>&lt;img src=&quot;<u>image_path</u>&quot; alt=&quot;alternative text&quot;&gt;</code></strong></p>
-    <!-- script  -->
-    <img src="image_path" alt="alternative text" height="100" width="100">
-    <!-- attribute explanation  -->
-    <ul>
-        <li><strong><code>src</code> attribute:</strong> Specifies the path to the image file.</li>
-        <li><strong><code>alt</code> attribute:</strong> Provides alternative text for the image, which is important for
-            accessibility and SEO.</li>
-        <li><strong><code>height attribute:</code></strong>making an absolute/fixed height of the image.</li>
-        <li><strong><code>width attribute:</code></strong>making an absolute/fixed width of the image.</li>
-    </ul>
 
-    <h4>Example#1:</h4>
-    <img src="nature.jpg" alt="A beautiful nature scene">
-    <h4>Example#2:</h4>
-    <img src="nature.jpg" alt="A beautiful nature scene" width="300" height="200">
+    <header>
+        <h1>Image in HTML </h1>
+    </header>
+    <main>
+        <h2>&lt;img&gt; element</h2>
 
-    <h2>&lt;picture&gt; element</h2>
-    <p>To ensure your images look good on different screen sizes, you can use responsive images. This involves using the <code>&lt;picture&gt;</code> and <code>&lt;source&gt;</code> elements to provide different image sources for different screen sizes and resolutions.</p>
+        <!-- Syntax  -->
+        <h4>Syntax:</h4>
+        <p><strong><code>&lt;img src=&quot;<u>image_path</u>&quot; alt=&quot;alternative text&quot;&gt;</code></strong>
+        </p>
+        <!-- script  -->
+        <img src="image_path" alt="alternative text" height="100" width="100">
+        <!-- attribute explanation  -->
+        <ul>
+            <li><strong><code>src</code> attribute:</strong> Specifies the path to the image file.</li>
+            <li><strong><code>alt</code> attribute:</strong> Provides alternative text for the image, which is important
+                for
+                accessibility and SEO.</li>
+            <li><strong><code>height attribute:</code></strong>making an absolute/fixed height of the image.</li>
+            <li><strong><code>width attribute:</code></strong>making an absolute/fixed width of the image.</li>
+        </ul>
 
-    <p>The browser will consider each child <code>&lt;source&gt;</code> element and choose the best match among them. If no matches are found—or the browser doesn't support the <code>&lt;picture&gt;</code> element—the URL of the <code>&lt;img&gt;</code> element's <mark><code>src</code> </mark>attribute is selected. The selected image is then presented in the space occupied by the <code><mark>&lt;img&gt;</mark></code> element.</p>
-    <h4>Example: </h4>
-    <picture>
-        <!-- large pic  -->
-        <source media="(min-width: 768px)" srcset="nature.jpg">
-        <!-- medium pic  -->
-        <source media="(min-width: 480px)" srcset="nature.jpg">
-        <img src="nature.jpg" alt="Image description">
-      </picture>
+
+        <img src="natures.jpg" alt="this is a nature pic">
+
+
+
+        <h4>Example#1:</h4>
+        <img src="nature.jpg" alt="A beautiful nature scene">
+        <h4>Example#2:</h4>
+        <img src="nature.jpg" alt="A beautiful nature scene" width="300" height="200">
+
+
+
+
+
+
+
+
+
+        
+        <h2>&lt;picture&gt; element</h2>
+        <p>To ensure your images look good on different screen sizes, you can use responsive images. This involves using
+            the
+            <code>&lt;picture&gt;</code> and <code>&lt;source&gt;</code> elements to provide different image sources for
+            different screen sizes and resolutions.
+        </p>
+
+        <p>The browser will consider each child <code>&lt;source&gt;</code> element and choose the best match among
+            them. If
+            no matches are found—or the browser doesn't support the <code>&lt;picture&gt;</code> element—the URL of the
+            <code>&lt;img&gt;</code> element's <mark><code>src</code> </mark>attribute is selected. The selected image
+            is
+            then presented in the space occupied by the <code><mark>&lt;img&gt;</mark></code> element.
+        </p>
+        <h4>Example: </h4>
+        <picture>
+            <!-- large pic  -->
+            <source media="(min-width: 768px)" srcset="nature.jpg">
+            <!-- medium pic  -->
+            <source media="(min-width: 480px)" srcset="nature.jpg">
+            <img src="nature.jpg" alt="Image description">
+        </picture>
+
+
+
+
+
+
+
+    </main>
+
 </body>
+
 </html>
